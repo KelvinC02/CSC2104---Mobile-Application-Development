@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RecipePal</string>
+
+    //RecipeFragmentContent
+    <string name="title_label">Recipe</string>
+    <string name="recipe_name_hint">Enter Name of Recipe</string>
+    <string name="detail_label">Details</string>
+    <string name="recipe_ingredients_hint">Enter Ingredients of Recipe</string>
+    <string name="instruction_label">Instructions</string>
+    <string name="recipe_instructions_hint">Enter Instructions of Recipe</string>
+    <string name="notes_label">Notes</string>
+    <string name="recipe_notes_hint">Enter Notes of Recipe</string>
+    <string name="recipe_recommend_label">Recommend</string>
+
+    <string name="btn_shareRecipe">Share this Recipe</string>
+    <string name="btn_addRecipe">Add Recipe</string>
+    <string name="btn_deleteRecipe">Delete Recipe</string>
+
+    //SplashScreen
+    <string name="btn_start">Get Started</string>
+
+    //MainActivity
+    <string name="searchBar_hint">Search for Recipe</string>
+
+    <string name="quotes"><font color='black'>Make your own food,\nstay at </font><font color='#f18d46'>Home!</font></string>
+
+
+
+</resources>

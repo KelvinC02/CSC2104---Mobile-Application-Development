@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Name of com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.Recipe -->
+        <EditText
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Recipe"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.Recipe Image (you can use ImageView if you want to display the image) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/recipeImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Select Image" />
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Ingredients" />
+
+        <EditText
+            android:id="@+id/recipe_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ingredients, separated by a comma and new line (e.g., Ingredient 1,\nIngredient 2)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"/>
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="Instructions" />
+
+        <EditText
+            android:id="@+id/recipe_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter step-by-step instructions, separated by a comma and new line (e.g., Step 1,\nStep 2)"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <!-- Additional Notes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="Notes"/>
+
+        <EditText
+            android:id="@+id/recipe_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter any additional notes"/>
+
+        <!-- Is the com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.com.example.recipepal.database.Recipe Recommended? (Use CheckBox for Yes/No selection) -->
+        <CheckBox
+            android:id="@+id/recipe_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommend this recipe" />
+
+        <!-- Display the selected Recorded Date -->
+        <TextView
+            android:id="@+id/recordedDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+
+        <!-- Time to Prepare (in minutes) -->
+        <Button
+            android:id="@+id/showDatePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Recorded Date"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <!-- Display the selected Preparation Time -->
+        <TextView
+            android:id="@+id/preparationTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"/>
+
+        <!-- Show TimePicker using a button -->
+        <Button
+            android:id="@+id/showTimePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Preparation Time"
+            android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <!-- Add a button to save the entered data -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Save Recipe Button -->
+            <Button
+                android:id="@+id/btn_addRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Recipe"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Share Button -->
+            <Button
+                android:id="@+id/btn_shareRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
